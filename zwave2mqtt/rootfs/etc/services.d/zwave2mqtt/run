@@ -1,0 +1,14 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Community Hass.io Add-ons: Z-Wave to MQTT
+# Starts zwave2mqtt
+# ==============================================================================
+bashio::log.info "Starting the Z-Wave to MQTT..."
+
+export NODE_ENV=production
+export PORT=44920
+
+cd /opt/ \
+    || bashio::exit.nok "Could not change directory to application"
+
+exec node bin/www
