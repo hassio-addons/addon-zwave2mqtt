@@ -23,6 +23,8 @@
 
 Fully configurable Z-Wave to MQTT gateway and control panel.
 
+![Z-Wave to MQTT](zwave2mqtt/logo.png)
+
 ## About
 
 The Z-Wave to MQTT add-on allows you to decouple your Z-Wave network from
@@ -45,7 +47,7 @@ comparison to installing any other Hass.io add-on.
 
 1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
 1. Install the "Z-Wave to MQTT" add-on.
-1. Start the "Z-Wave to MQTT" add-on
+1. Start the "Z-Wave to MQTT" add-on.
 1. Check the logs of the "Z-Wave to MQTT" add-on to see if everything went well.
 1. Click the "OPEN WEB UI" button.
 1. Enjoy the add-on!
@@ -229,7 +231,7 @@ SOFTWARE.
 [dockerhub]: https://hub.docker.com/r/hassioaddons/zwave2mqtt
 [esphome]: https://esphome.io/components/mqtt.html#on-message-trigger
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/?u=frenck
+[forum]: https://community.home-assistant.io/t/community-hass-io-add-on-z-wave-to-mqtt/115899?u=frenck
 [frenck]: https://github.com/frenck
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-zwave2mqtt/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-zwave2mqtt/pipelines
