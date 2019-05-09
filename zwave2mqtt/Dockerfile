@@ -22,7 +22,7 @@ RUN \
         libusb=1.0.22-r0 \
         lua-resty-http=0.13-r0 \
         nginx-mod-http-lua=1.14.2-r1 \
-        nginx=1.14.2-r1 \
+        nginx~=1.14.2 \
         nodejs=10.14.2-r0 \
         openssl=1.1.1b-r1 \
         openzwave=1.4.164-r4 \
