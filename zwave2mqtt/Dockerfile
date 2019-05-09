@@ -14,7 +14,7 @@ RUN \
         linux-headers=4.18.13-r1 \
         npm=10.14.2-r0 \
         openzwave-dev=1.4.164-r4 \
-        python2-dev=2.7.16-r1 \
+        python2-dev~=2.7 \
         yarn=1.12.3-r0 \
     \
     && apk add --no-cache \
