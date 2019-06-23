@@ -18,7 +18,7 @@ RUN \
         yarn=1.16.0-r0 \
     \
     && apk add --no-cache \
-        eudev=3.2.7-r0 \
+        eudev=3.2.8-r0 \
         libusb=1.0.22-r0 \
         lua-resty-http=0.13-r0 \
         nginx-mod-http-lua~=1.14.2 \
