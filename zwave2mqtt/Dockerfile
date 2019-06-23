@@ -23,7 +23,7 @@ RUN \
         lua-resty-http=0.13-r0 \
         nginx-mod-http-lua~=1.14.2 \
         nginx~=1.14.2 \
-        nodejs=10.14.2-r0 \
+        nodejs=10.16.0-r0 \
         openssl=1.1.1b-r1 \
         openzwave=1.4.164-r4 \
     \
