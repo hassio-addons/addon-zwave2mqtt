@@ -40,6 +40,8 @@ Some advantages and use-cases for this are:
 - Allow [ESPHome.io][esphome] based ESP devices to directly respond or work
   with your Z-Wave network.
 
+This add-on uses the [Zwave2Mqtt][zwave2mqtt] software provided by OpenZWave.
+
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
@@ -54,6 +56,9 @@ comparison to installing any other Hass.io add-on.
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
+
+**NOTE**: The upstream project has documentation on using the software itself:
+<https://github.com/OpenZWave/Zwave2Mqtt>
 
 ## Configuration
 
@@ -249,3 +254,4 @@ SOFTWARE.
 [releases]: https://github.com/hassio-addons/addon-zwave2mqtt/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: http://semver.org/spec/v2.0.0.htm
+[zwave2mqtt]: https://github.com/OpenZWave/Zwave2Mqtt
