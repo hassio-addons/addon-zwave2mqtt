@@ -12,7 +12,7 @@ RUN \
         build-base=0.5-r1 \
         git=2.22.0-r0 \
         linux-headers=4.19.36-r0 \
-        npm=10.14.2-r0 \
+        npm=10.16.0-r0 \
         openzwave-dev=1.4.164-r4 \
         python2-dev~=2.7 \
         yarn=1.12.3-r0 \
