@@ -21,8 +21,8 @@ RUN \
         eudev=3.2.8-r0 \
         libusb=1.0.22-r0 \
         lua-resty-http=0.13-r0 \
-        nginx-mod-http-lua=1.16.1-r0 \
-        nginx=1.16.1-r0 \
+        nginx-mod-http-lua=1.16.1-r1 \
+        nginx=1.16.1-r1 \
         nodejs=10.16.3-r0 \
         openssl=1.1.1d-r0 \
         openzwave=1.4.164-r4 \
