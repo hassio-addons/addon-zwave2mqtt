@@ -47,15 +47,12 @@ This add-on uses the [Zwave2Mqtt][zwave2mqtt] software provided by OpenZWave.
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
-1. Install the "Z-Wave to MQTT" add-on.
+1. Search for the "Z-Wave to MQTT" add-on in the Hass.io add-on store
+   and install it.
 1. Start the "Z-Wave to MQTT" add-on.
 1. Check the logs of the "Z-Wave to MQTT" add-on to see if everything went well.
 1. Click the "OPEN WEB UI" button.
 1. Enjoy the add-on!
-
-**NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/hassio-addons/repository`.
 
 **NOTE**: The upstream project has documentation on using the software itself:
 <https://github.com/OpenZWave/Zwave2Mqtt>
