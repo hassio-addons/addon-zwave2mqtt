@@ -28,7 +28,7 @@ RUN \
         openzwave=1.4.164-r4 \
     \
     && curl -J -L -o /tmp/openzwave-db.tar.gz \
-        "https://github.com/OpenZWave/open-zwave/archive/3d6374c831998595744cc34ef862a80ee51973c9.tar.gz" \
+        "https://github.com/OpenZWave/open-zwave/archive/449f89f063effb048f5dd6348d509a6c54fd942d.tar.gz" \
     && mkdir /tmp/db \
     && tar zxvf \
         /tmp/openzwave-db.tar.gz \
