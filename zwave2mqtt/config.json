@@ -39,7 +39,7 @@
     "ssl": "bool",
     "certfile": "str",
     "keyfile": "str",
-    "config_path": "str",
+    "config_path": "str?",
     "leave_front_door_open": "bool?"
   }
 }
