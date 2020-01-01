@@ -118,6 +118,13 @@ username and password empty.
 **Note**: _We STRONGLY suggest, not to use this, even if this add-on is
 only exposed to your internal network. USE AT YOUR OWN RISK!_
 
+### Option: `config_path`
+
+Adding this option to override the OpenZWave config directory. To add for example custom configs for not supported devices.
+
+**Note**: You need to download the full OpenZWave db from https://github.com/OpenZWave/open-zwave/tree/1.4 and place the `config` content a persistent location like the /config
+ directory. _We STRONGLY suggest, not to use this USE AT YOUR OWN RISK!_
+
 ## Embedding into Home Assistant
 
 It is possible to embed the Z-Wave to MQTT control panel web interface directly
