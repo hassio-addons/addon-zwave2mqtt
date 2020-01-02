@@ -122,7 +122,8 @@ only exposed to your internal network. USE AT YOUR OWN RISK!_
 
 Adding this option to override the OpenZWave config directory. To add for example custom configs for not supported devices.
 
-**Note**: You need to download the full OpenZWave db from https://github.com/OpenZWave/open-zwave/tree/1.4 and place the `config` content a persistent location like the /config
+**Note**: You need to download the full OpenZWave db from https://github.com/OpenZWave/open-zwave/tree/1.4 and place the `config` content a persistent location like the `/config
+/zwave_config`
  directory. _We STRONGLY suggest, not to use this USE AT YOUR OWN RISK!_
 
 ## Embedding into Home Assistant
