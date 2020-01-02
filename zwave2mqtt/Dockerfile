@@ -10,7 +10,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
-        git=2.22.0-r0 \
+        git=2.22.2-r0 \
         linux-headers=4.19.36-r0 \
         npm=10.16.3-r0 \
         openzwave-dev=1.4.164-r4 \
@@ -24,7 +24,7 @@ RUN \
         nginx-mod-http-lua=1.16.1-r1 \
         nginx=1.16.1-r1 \
         nodejs=10.16.3-r0 \
-        openssl=1.1.1d-r0 \
+        openssl=1.1.1d-r2 \
         openzwave=1.4.164-r4 \
     \
     && curl -J -L -o /tmp/openzwave-db.tar.gz \
