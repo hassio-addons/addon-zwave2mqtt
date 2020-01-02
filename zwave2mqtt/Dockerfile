@@ -13,7 +13,7 @@ RUN \
         git=2.24.1-r0 \
         linux-headers=4.19.36-r0 \
         npm=12.14.0-r0 \
-        openzwave-dev=1.4.164-r4 \
+        openzwave-dev=1.6.974-r0 \
         python2-dev~=2.7 \
         yarn=1.19.2-r0 \
     \
@@ -25,7 +25,7 @@ RUN \
         nginx=1.16.1-r4 \
         nodejs=12.14.0-r0 \
         openssl=1.1.1d-r0 \
-        openzwave=1.4.164-r4 \
+        openzwave=1.6.974-r0 \
     \
     && curl -J -L -o /tmp/openzwave-db.tar.gz \
         "https://github.com/OpenZWave/open-zwave/archive/449f89f063effb048f5dd6348d509a6c54fd942d.tar.gz" \
