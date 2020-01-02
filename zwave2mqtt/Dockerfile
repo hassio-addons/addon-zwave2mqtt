@@ -15,7 +15,7 @@ RUN \
         npm=12.14.0-r0 \
         openzwave-dev=1.4.164-r4 \
         python2-dev~=2.7 \
-        yarn=1.16.0-r0 \
+        yarn=1.19.2-r0 \
     \
     && apk add --no-cache \
         eudev=3.2.8-r0 \
