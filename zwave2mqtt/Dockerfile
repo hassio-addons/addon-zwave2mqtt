@@ -24,7 +24,7 @@ RUN \
         nginx-mod-http-lua=1.16.1-r4 \
         nginx=1.16.1-r4 \
         nodejs=12.14.0-r0 \
-        openssl=1.1.1d-r0 \
+        openssl=1.1.1d-r3 \
         openzwave=1.6.974-r0 \
     \
     && curl -J -L -o /tmp/openzwave-db.tar.gz \
