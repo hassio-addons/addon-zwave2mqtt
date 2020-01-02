@@ -45,6 +45,7 @@ RUN \
     \
     && cd /opt \
     && npm config set unsafe-perm \
+    && npm update serialport \
     && npm install \
     && npm run build \
     && npm prune --production \
