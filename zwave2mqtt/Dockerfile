@@ -38,14 +38,13 @@ RUN \
     && mv /tmp/db/config /usr/etc/openzwave \
     \
     && curl -J -L -o /tmp/zwave2mqtt.tar.gz \
-        "https://github.com/OpenZWave/Zwave2Mqtt/archive/v2.0.6.tar.gz" \
+        "https://github.com/OpenZWave/Zwave2Mqtt/archive/v2.1.0.tar.gz" \
     && tar zxvf \
         /tmp/zwave2mqtt.tar.gz \
         --strip 1 -C /opt \
     \
     && cd /opt \
     && npm config set unsafe-perm \
-    && npm update serialport \
     && npm install \
     && npm run build \
     && npm prune --production \
