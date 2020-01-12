@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:5.0.3
+ARG BUILD_FROM=hassioaddons/base:6.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -10,25 +10,25 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
-        git=2.22.0-r0 \
+        git=2.24.1-r0 \
         linux-headers=4.19.36-r0 \
-        npm=10.16.3-r0 \
-        openzwave-dev=1.4.164-r4 \
+        npm=12.14.0-r0 \
+        openzwave-dev=1.6.974-r0 \
         python2-dev~=2.7 \
-        yarn=1.16.0-r0 \
+        yarn=1.19.2-r0 \
     \
     && apk add --no-cache \
-        eudev=3.2.8-r0 \
-        libusb=1.0.22-r0 \
-        lua-resty-http=0.13-r0 \
-        nginx-mod-http-lua=1.16.1-r1 \
-        nginx=1.16.1-r1 \
-        nodejs=10.16.3-r0 \
-        openssl=1.1.1d-r0 \
-        openzwave=1.4.164-r4 \
+        eudev=3.2.9-r1 \
+        libusb=1.0.23-r0 \
+        lua-resty-http=0.15-r0 \
+        nginx-mod-http-lua=1.16.1-r4 \
+        nginx=1.16.1-r4 \
+        nodejs=12.14.0-r0 \
+        openssl=1.1.1d-r3 \
+        openzwave=1.6.974-r0 \
     \
     && curl -J -L -o /tmp/openzwave-db.tar.gz \
-        "https://github.com/OpenZWave/open-zwave/archive/449f89f063effb048f5dd6348d509a6c54fd942d.tar.gz" \
+        "https://github.com/OpenZWave/open-zwave/archive/07acd313435998c2740257cc5f71c1bb8a27cb43.tar.gz" \
     && mkdir /tmp/db \
     && tar zxvf \
         /tmp/openzwave-db.tar.gz \
@@ -38,7 +38,7 @@ RUN \
     && mv /tmp/db/config /usr/etc/openzwave \
     \
     && curl -J -L -o /tmp/zwave2mqtt.tar.gz \
-        "https://github.com/OpenZWave/Zwave2Mqtt/archive/v2.0.6.tar.gz" \
+        "https://github.com/OpenZWave/Zwave2Mqtt/archive/v2.1.0.tar.gz" \
     && tar zxvf \
         /tmp/zwave2mqtt.tar.gz \
         --strip 1 -C /opt \
