@@ -6,13 +6,7 @@
   "url": "https://github.com/hassio-addons/addon-zwave2mqtt",
   "webui": "http://[HOST]:[PORT:8091]",
   "startup": "system",
-  "arch": [
-    "aarch64",
-    "amd64",
-    "armhf",
-    "armv7",
-    "i386"
-  ],
+  "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "ports": {
     "8091/tcp": 8091
   },
@@ -24,11 +18,7 @@
   "hassio_api": true,
   "hassio_role": "default",
   "auto_uart": true,
-  "map": [
-    "config:rw",
-    "share:rw",
-    "ssl:rw"
-  ],
+  "map": ["config:rw", "share:rw", "ssl:rw"],
   "options": {
     "ssl": true,
     "certfile": "fullchain.pem",
