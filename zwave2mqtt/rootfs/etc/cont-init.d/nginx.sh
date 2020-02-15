@@ -5,7 +5,7 @@
 # ==============================================================================
 declare certfile
 declare keyfile
-declare hassio_dns
+declare dns_host
 
 bashio::config.require.ssl
 
@@ -21,5 +21,5 @@ else
     mv /etc/nginx/servers/direct.disabled /etc/nginx/servers/direct.conf
 fi
 
-hassio_dns=$(bashio::dns.host)
-sed -i "s/%%hassio_dns%%/${hassio_dns}/g" /etc/nginx/includes/resolver.conf
+dns_host=$(bashio::dns.host)
+sed -i "s/%%dns_host%%/${dns_host}/g" /etc/nginx/includes/resolver.conf
