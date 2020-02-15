@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Z-Wave to MQTT
+# Home Assistant Community Add-on: Z-Wave to MQTT
 # Runs the Nginx daemon
 # ==============================================================================
 

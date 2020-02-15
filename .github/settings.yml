@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "Z-Wave to MQTT - Community Hass.io Add-on for Home Assistant"
+  description: "Z-Wave to MQTT - Home Assistant Community Add-ons"
   homepage: https://addons.community
-  topics: z-wave, zwave, openzwave, ozw, mqtt, gatewat, iot, hassio-addons, hassio, hass, home-assistant, homeassistant
+  topics: z-wave, zwave, openzwave, ozw, mqtt, gateway, iot, addon, addons, home-assistant, homeassistant
   private: false
   has_issues: true
   has_projects: false

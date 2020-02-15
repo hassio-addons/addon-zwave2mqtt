@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Z-Wave to MQTT
+# Home Assistant Community Add-on: Z-Wave to MQTT
 # Configures NGINX for use with this add-on.
 # ==============================================================================
 declare certfile
