@@ -58,7 +58,7 @@ RUN \
     && yarn global remove modclean \
     && yarn cache clean \
     \
-    && apk del --purge .build-dependencies \
+    && apk del --no-cache --purge .build-dependencies \
     \
     && rm -f -r \
         /etc/nginx \
