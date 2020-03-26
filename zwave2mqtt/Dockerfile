@@ -34,8 +34,8 @@ RUN \
         /tmp/openzwave-db.tar.gz \
         --strip 1 -C /tmp/db \
     \
-    && mkdir /usr/etc \
-    && mv /tmp/db/config /usr/etc/openzwave \
+    && mkdir -p /usr/local/etc \
+    && mv /tmp/db/config /usr/local/etc/openzwave \
     \
     && curl -J -L -o /tmp/zwave2mqtt.tar.gz \
         "https://github.com/OpenZWave/Zwave2Mqtt/archive/v3.0.1.tar.gz" \
