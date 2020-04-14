@@ -138,6 +138,9 @@ panel_iframe:
 
 - This add-on is currently unable to support Hass.io Ingress. This is due to
   technical limitations of the zwave2mqtt control panel web interface.
+- If the OpenZwave device database doesn't seem to be loaded. Device names
+  and options are missing: Go to Settings -> Zwave -> Config Path and set it
+  to `/etc/openzwave`.
 
 ## Changelog & Releases
 

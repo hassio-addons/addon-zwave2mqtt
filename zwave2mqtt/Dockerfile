@@ -34,8 +34,9 @@ RUN \
         /tmp/openzwave-db.tar.gz \
         --strip 1 -C /tmp/db \
     \
-    && mkdir -p /usr/local/etc/openzwave \
-    && mv /tmp/db/config/* /usr/local/etc/openzwave \
+    && rm -f -r /etc/openzwave \
+    && mkdir -p /etc/openzwave \
+    && mv /tmp/db/config/* /etc/openzwave \
     \
     && curl -J -L -o /tmp/zwave2mqtt.tar.gz \
         "https://github.com/OpenZWave/Zwave2Mqtt/archive/v3.0.2.tar.gz" \
@@ -62,7 +63,6 @@ RUN \
     \
     && rm -f -r \
         /etc/nginx \
-        /etc/openzwave \
         /root/.node-gyp \
         /root/.npm \
         /tmp/.[!.]* \
