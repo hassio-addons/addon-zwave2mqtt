@@ -42,119 +42,7 @@ Some advantages and use-cases for this are:
 
 This add-on uses the [Zwave2Mqtt][zwave2mqtt] software provided by OpenZWave.
 
-## Installation
-
-The installation of this add-on is pretty straightforward and not different in
-comparison to installing any other Home Assistant add-on.
-
-1. Search for the "Z-Wave to MQTT" add-on in the Supervisor add-on store
-   and install it.
-1. Start the "Z-Wave to MQTT" add-on.
-1. Check the logs of the "Z-Wave to MQTT" add-on to see if everything went well.
-1. Click the "OPEN WEB UI" button.
-1. Enjoy the add-on!
-
-**NOTE**: The upstream project has documentation on using the software itself:
-<https://github.com/OpenZWave/Zwave2Mqtt>
-
-## Configuration
-
-**Note**: _Remember to restart the add-on when the configuration is changed._
-
-Example add-on configuration:
-
-```yaml
-log_level: info
-ssl: true
-certfile: fullchain.pem
-keyfile: privkey.pem
-```
-
-**Note**: _This is just an example, don't copy and paste it! Create your own!_
-
-### Option: `log_level`
-
-The `log_level` option controls the level of log output by the addon and can
-be changed to be more or less verbose, which might be useful when you are
-dealing with an unknown issue. Possible values are:
-
-- `trace`: Show every detail, like all called internal functions.
-- `debug`: Shows detailed debug information.
-- `info`: Normal (usually) interesting events.
-- `warning`: Exceptional occurrences that are not errors.
-- `error`:  Runtime errors that do not require immediate action.
-- `fatal`: Something went terribly wrong. Add-on becomes unusable.
-
-Please note that each level automatically includes log messages from a
-more severe level, e.g., `debug` also shows `info` messages. By default,
-the `log_level` is set to `info`, which is the recommended setting unless
-you are troubleshooting.
-
-### Option: `ssl`
-
-Enables/Disables SSL on the control panel. Set it `true` to enable it,
-`false` otherwise.
-
-### Option: `certfile`
-
-The certificate file to use for SSL.
-
-**Note**: _The file MUST be stored in `/ssl/`, which is the default_
-
-### Option: `keyfile`
-
-The private key file to use for SSL.
-
-**Note**: _The file MUST be stored in `/ssl/`, which is the default_
-
-### Option: `leave_front_door_open`
-
-Adding this option to the add-on configuration allows you to disable
-authentication on the add-on by setting it to `true` and leaving the
-username and password empty.
-
-**Note**: _We STRONGLY suggest, not to use this, even if this add-on is
-only exposed to your internal network. USE AT YOUR OWN RISK!_
-
-## Embedding into Home Assistant
-
-It is possible to embed the Z-Wave to MQTT control panel web interface directly
-into Home Assistant, allowing you to access it through the Home Assistant
-frontend.
-
-Home Assistant provides the `panel_iframe` integration, for these purposes.
-
-Example configuration:
-
-```yaml
-panel_iframe:
-  zwave2mqtt:
-    title: Z-Wave to MQTT
-    icon: mdi:z-wave
-    url: http://addres.to.your.hass.io:8091
-```
-
-## Known issues and limitations
-
-- This add-on is currently unable to support Hass.io Ingress. This is due to
-  technical limitations of the zwave2mqtt control panel web interface.
-- If the OpenZwave device database doesn't seem to be loaded. Device names
-  and options are missing: Go to Settings -> Zwave -> Config Path and set it
-  to `/etc/openzwave`.
-
-## Changelog & Releases
-
-This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
-
-Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
-based on the following:
-
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
+[:books: Read the full add-on documentation][docs]
 
 ## Support
 
@@ -229,7 +117,7 @@ SOFTWARE.
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[dockerhub]: https://hub.docker.com/r/hassioaddons/zwave2mqtt
+[docs]: https://github.com/hassio-addons/addon-zwave2mqtt/blob/master/zwave2mqtt/DOCS.md
 [esphome]: https://esphome.io/components/mqtt.html#on-message-trigger
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-z-wave-to-mqtt/115899?u=frenck
@@ -238,10 +126,8 @@ SOFTWARE.
 [github-sponsors]: https://github.com/sponsors/frenck
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-zwave2mqtt/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-zwave2mqtt/pipelines
-[home-assistant]: https://home-assistant.io
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-zwave2mqtt/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-zwave2mqtt.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
@@ -251,5 +137,4 @@ SOFTWARE.
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-zwave2mqtt.svg
 [releases]: https://github.com/hassio-addons/addon-zwave2mqtt/releases
 [repository]: https://github.com/hassio-addons/repository
-[semver]: http://semver.org/spec/v2.0.0.htm
 [zwave2mqtt]: https://github.com/OpenZWave/Zwave2Mqtt
