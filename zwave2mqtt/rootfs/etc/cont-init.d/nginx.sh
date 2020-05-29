@@ -9,3 +9,7 @@ declare dns_host
 
 dns_host=$(bashio::dns.host)
 sed -i "s/%%dns_host%%/${dns_host}/g" /etc/nginx/includes/resolver.conf
+
+ingress_interface=$(bashio::addon.ip_address)
+sed -i "s/%%interface%%/${ingress_interface}/g" /etc/nginx/servers/ingress.conf
+
