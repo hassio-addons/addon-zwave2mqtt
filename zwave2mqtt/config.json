@@ -4,15 +4,18 @@
   "slug": "zwave2mqtt",
   "description": "Fully configurable Z-Wave to MQTT gateway and control panel",
   "url": "https://github.com/hassio-addons/addon-zwave2mqtt",
-  "webui": "[PROTO:ssl]://[HOST]:[PORT:8091]",
+  "ingress": true,
+  "ingress_port": 8091,
+  "panel_icon": "mdi:z-wave",
+  "panel_title": "Z-Wave MQTT",
   "startup": "system",
   "init": false,
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "ports": {
-    "8091/tcp": 8091
+    "8091/tcp": null
   },
   "ports_description": {
-    "8091/tcp": "Z-Wave to MQTT Control Panel"
+    "8091/tcp": "Not Required For Ingress"
   },
   "boot": "auto",
   "auth_api": true,
