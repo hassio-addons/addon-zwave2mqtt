@@ -39,7 +39,7 @@ RUN \
     && mv /tmp/db/config/* /etc/openzwave \
     \
     && curl -J -L -o /tmp/zwave2mqtt.tar.gz \
-        "https://github.com/OpenZWave/Zwave2Mqtt/archive/v3.2.1.tar.gz" \
+        "https://github.com/fabio-torchetti/Zwave2Mqtt/archive/feature/select-base.zip" \
     && tar zxvf \
         /tmp/zwave2mqtt.tar.gz \
         --strip 1 -C /opt \
