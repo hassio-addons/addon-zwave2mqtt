@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: Z-Wave to MQTT
+# Runs the sshd daemon
+# ==============================================================================
+
+if bashio::config.true 'enable_ssh'; then
+    bashio::log.info "Starting ssh server."
+    exec /usr/sbin/sshd -D -e
+else
+    bashio::log.info "SSH Server Disabled."
+fi
+

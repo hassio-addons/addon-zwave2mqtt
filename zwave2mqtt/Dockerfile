@@ -13,6 +13,7 @@ RUN \
         git=2.24.3-r0 \
         linux-headers=4.19.36-r0 \
         npm=12.15.0-r1 \
+        openssh=8.1_p1-r0 \
         openzwave-dev=1.6.974-r0 \
         python2-dev~=2.7 \
         yarn=1.19.2-r0 \
