@@ -28,7 +28,7 @@ RUN \
         openzwave=1.6.974-r0 \
     \
     && curl -J -L -o /tmp/openzwave-db.tar.gz \
-        "https://github.com/OpenZWave/open-zwave/archive/2a76bdcd04513aa02618cc34432f8d5242fc73d1.tar.gz" \
+        "https://github.com/OpenZWave/open-zwave/archive/01c8d001e5a4342313f34496bf1ab56849b461f4.tar.gz" \
     && mkdir /tmp/db \
     && tar zxvf \
         /tmp/openzwave-db.tar.gz \
@@ -39,7 +39,7 @@ RUN \
     && mv /tmp/db/config/* /etc/openzwave \
     \
     && curl -J -L -o /tmp/zwave2mqtt.tar.gz \
-        "https://github.com/OpenZWave/Zwave2Mqtt/archive/v3.2.2.tar.gz" \
+        "https://github.com/OpenZWave/Zwave2Mqtt/archive/v4.0.2.tar.gz" \
     && tar zxvf \
         /tmp/zwave2mqtt.tar.gz \
         --strip 1 -C /opt \
