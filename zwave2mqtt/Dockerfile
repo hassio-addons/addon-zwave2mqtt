@@ -11,7 +11,7 @@ RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r2 \
         git=2.26.2-r0 \
-        linux-headers=4.19.36-r0 \
+        linux-headers=5.4.5-r1 \
         npm=12.15.0-r1 \
         openzwave-dev=1.6.974-r0 \
         python2-dev~=2.7 \
