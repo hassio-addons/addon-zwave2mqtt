@@ -12,7 +12,7 @@ RUN \
         build-base=0.5-r2 \
         git=2.26.2-r0 \
         linux-headers=5.4.5-r1 \
-        npm=12.18.3-r0 \
+        npm=12.18.4-r0 \
         openzwave-dev=1.6.974-r0 \
         python2-dev~=2.7 \
         yarn=1.22.4-r0 \
@@ -23,7 +23,7 @@ RUN \
         lua-resty-http=0.15-r0 \
         nginx-mod-http-lua=1.18.0-r0 \
         nginx=1.18.0-r0 \
-        nodejs=12.18.3-r0 \
+        nodejs=12.18.4-r0 \
         openssl=1.1.1g-r0 \
         openzwave=1.6.974-r0 \
     \
