@@ -14,7 +14,6 @@
   "ports_description": {
     "8091/tcp": "Z-Wave to MQTT Control Panel"
   },
-  "boot": "auto",
   "auth_api": true,
   "hassio_api": true,
   "auto_uart": true,
