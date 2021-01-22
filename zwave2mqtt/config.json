@@ -17,7 +17,6 @@
   "boot": "auto",
   "auth_api": true,
   "hassio_api": true,
-  "hassio_role": "default",
   "auto_uart": true,
   "map": ["config:rw", "share:rw", "ssl:rw"],
   "options": {
