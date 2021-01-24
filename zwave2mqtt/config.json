@@ -15,7 +15,6 @@
     "8091/tcp": "Z-Wave to MQTT Control Panel"
   },
   "auth_api": true,
-  "hassio_api": true,
   "auto_uart": true,
   "map": ["config:rw", "share:rw", "ssl:rw"],
   "options": {
