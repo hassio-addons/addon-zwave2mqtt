@@ -20,8 +20,6 @@ RUN \
     && apk add --no-cache \
         eudev=3.2.9-r3 \
         libusb=1.0.24-r0 \
-        lua-resty-http=0.15-r0 \
-        nginx-mod-http-lua=1.18.0-r13 \
         nginx=1.18.0-r13 \
         nodejs=14.15.4-r0 \
         openssl=1.1.1i-r0 \
