@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.6
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -10,21 +10,21 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r2 \
-        git=2.26.2-r0 \
-        linux-headers=5.4.5-r1 \
-        npm=12.18.4-r0 \
+        git=2.30.0-r0 \
+        linux-headers=5.7.8-r0 \
+        npm=14.15.4-r0 \
         openzwave-dev=1.6.974-r0 \
         python2-dev~=2.7 \
-        yarn=1.22.4-r0 \
+        yarn=1.22.10-r0 \
     \
     && apk add --no-cache \
         eudev=3.2.9-r3 \
-        libusb=1.0.23-r0 \
+        libusb=1.0.24-r0 \
         lua-resty-http=0.15-r0 \
-        nginx-mod-http-lua=1.18.0-r1 \
-        nginx=1.18.0-r1 \
-        nodejs=12.18.4-r0 \
-        openssl=1.1.1g-r0 \
+        nginx-mod-http-lua=1.18.0-r13 \
+        nginx=1.18.0-r13 \
+        nodejs=14.15.4-r0 \
+        openssl=1.1.1i-r0 \
         openzwave=1.6.974-r0 \
     \
     && curl -J -L -o /tmp/openzwave-db.tar.gz \
