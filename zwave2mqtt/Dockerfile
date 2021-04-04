@@ -22,7 +22,7 @@ RUN \
         libusb=1.0.24-r1 \
         nginx=1.18.0-r13 \
         nodejs=14.16.0-r0 \
-        openssl=1.1.1i-r0 \
+        openssl=1.1.1k-r0 \
         openzwave=1.6.974-r0 \
     \
     && curl -J -L -o /tmp/openzwave-db.tar.gz \
