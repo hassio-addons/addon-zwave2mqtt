@@ -1,5 +1,6 @@
 {
-  "name": "Z-Wave to MQTT",
+  "name": "Z-Wave to MQTT (DEPRECATED)",
+  "stage": "deprecated",
   "version": "dev",
   "slug": "zwave2mqtt",
   "description": "Fully configurable Z-Wave to MQTT gateway and control panel",

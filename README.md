@@ -25,6 +25,15 @@ Fully configurable Z-Wave to MQTT gateway and control panel.
 
 ![Z-Wave to MQTT](zwave2mqtt/logo.png)
 
+## Deprecation warning
+
+**This add-on is in a deprecated state!**
+
+The upstream project has been archived and will no longer receive updates.
+Therefore, there is no other solution but deprecating the add-on as well.
+
+Please use the Z-Wave JS to MQTT add-on instead.
+
 ## About
 
 The Z-Wave to MQTT add-on allows you to decouple your Z-Wave network from
@@ -132,7 +141,7 @@ SOFTWARE.
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
 [patreon]: https://www.patreon.com/frenck
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-%20!%20DEPRECATED%20%20%20!-ff0000.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-zwave2mqtt.svg
 [releases]: https://github.com/hassio-addons/addon-zwave2mqtt/releases
