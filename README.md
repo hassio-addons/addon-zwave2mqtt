@@ -30,7 +30,7 @@ Fully configurable Z-Wave to MQTT gateway and control panel.
 **This add-on is in a deprecated state!**
 
 The upstream project has been archived and will no longer receive updates.
-Therefore, there is not other solution but deprecating the add-on as well.
+Therefore, there is no other solution but deprecating the add-on as well.
 
 Please use the Z-Wave JS to MQTT add-on instead.
 
